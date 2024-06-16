@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jiji Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'data_management_jiji/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="my-4">Products</h1>
+
+        <div class="form-row mb-3">
+            <div class="col">
+                <label for="category-filter">Category</label>
+                <select class="form-control" id="category-filter"></select>
+            </div>
+            <div class="col">
+                <label for="region-filter">Region</label>
+                <select class="form-control" id="region-filter"></select>
+            </div>
+            <div class="col">
+                <label for="min-price-filter">Min Price</label>
+                <input type="number" class="form-control" id="min-price-filter">
+            </div>
+            <div class="col">
+                <label for="max-price-filter">Max Price</label>
+                <input type="number" class="form-control" id="max-price-filter">
+            </div>
+            <div class="col-auto align-self-end">
+                <button class="btn btn-primary" id="apply-filters">Apply Filters</button>
+            </div>
+        </div>
+
+        <div id="product-list" class="row"></div>
+
+        <h2 class="my-4">Cart</h2>
+        <ul id="cart-items" class="list-group"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{% static 'data_management_jiji/index.js' %}"></script>
+</body>
+
+</html>
