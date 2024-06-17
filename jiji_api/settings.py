@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'jiji_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'shop',  # The name of your database
         'USER': 'root',  # Your MySQL username
         'PASSWORD': '',  # Your MySQL password
