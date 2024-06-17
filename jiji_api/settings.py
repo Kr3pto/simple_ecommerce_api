@@ -104,7 +104,7 @@ DATABASES = {
 }
 
 DATABASES={
-    'default':dj_database_url.parse("postgres://shop_z6j7_user:XHYnvtrdEfeDJna2FnrWgxcMkx7ydkMT@dpg-cpnpg408fa8c73b5d7eg-a.oregon-postgres.render.com/shop_z6j7")
+    'default':dj_database_url.parse("postgres://shop_z6j7_user:XHYnvtrdEfeDJna2FnrWgxcMkx7ydkMT@dpg-cpnpg408fa8c73b5d7eg-a/shop_z6j7")
 }
 
 
