@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
+import os
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -96,6 +101,10 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',
     }
+}
+
+DATABASES={
+    'default':dj_database_url.parse("postgres://shop_z6j7_user:XHYnvtrdEfeDJna2FnrWgxcMkx7ydkMT@dpg-cpnpg408fa8c73b5d7eg-a.oregon-postgres.render.com/shop_z6j7")
 }
 
 
