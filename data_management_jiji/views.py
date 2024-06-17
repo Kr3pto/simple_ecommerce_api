@@ -14,16 +14,6 @@ class ProductList(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-    def perform_create(self, serializer):
-        # Make sure category and region are provided in the request data
-        category_id = self.request.data.get('category')
-        region_id = self.request.data.get('region')
-        
-        if category_id and region_id:
-            serializer.save(category_id=category_id, region_id=region_id)
-        else:
-            raise serializers.ValidationError("Category and Region are required.")
-
     def get_queryset(self):
         queryset = Product.objects.all()
         category = self.request.query_params.get('category')
