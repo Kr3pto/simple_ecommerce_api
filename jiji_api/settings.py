@@ -15,8 +15,6 @@ import dj_database_url
 import os
 
 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -94,18 +92,21 @@ WSGI_APPLICATION = 'jiji_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'shop',
-        'USER': '',
+        'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 
 DATABASES={
-    'default':dj_database_url.parse("postgres://shop_z6j7_user:XHYnvtrdEfeDJna2FnrWgxcMkx7ydkMT@dpg-cpnpg408fa8c73b5d7eg-a/shop_z6j7")
+    'default':dj_database_url.parse("postgres://shop_z6j7_user:XHYnvtrdEfeDJna2FnrWgxcMkx7ydkMT@dpg-cpnpg408fa8c73b5d7eg-a.oregon-postgres.render.com/shop_z6j7")
 }
+
+
+
 
 
 # Password validation
@@ -152,3 +153,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # At the bottom of settings.py
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ensure STATICFILES_DIRS is set if you have additional directories with static files
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
