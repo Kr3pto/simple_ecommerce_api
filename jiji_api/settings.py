@@ -85,17 +85,18 @@ WSGI_APPLICATION = 'jiji_api.wsgi.application'
 # shop/settings.py
 
 
+# settings.py
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'shop',  # The name of your database
-        'USER': 'root',  # Your MySQL username
-        'PASSWORD': '',  # Your MySQL password
-        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
-        'PORT': '5432',  # Default port for MySQL
+        'NAME': 'shop',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-
 
 
 # Password validation
