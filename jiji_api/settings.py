@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-sp!ybm6yu$&d9$8wwvr7ls6-f)yx6)go(25@l4a1f9i$wr2o8#
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'simple-ecommerce-api-1.onrender.com'
+    'https://simple-ecommerce-api-1.onrender.com'
 ]
 
 
