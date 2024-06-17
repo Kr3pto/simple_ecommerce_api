@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'jiji_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'shop_z6j7',
-        'USER': 'shop_z6j7_user',
-        'PASSWORD': 'XHYnvtrdEfeDJna2FnrWgxcMkx7ydkMT',
-        'HOST': 'dpg-cpnpg408fa8c73b5d7eg-a',
+        'NAME': 'shop',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
