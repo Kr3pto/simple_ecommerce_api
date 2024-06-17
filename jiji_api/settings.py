@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'data_management_jiji',
     'corsheaders',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -171,3 +172,11 @@ STATICFILES_DIRS = [
 
 # If you need to allow credentials (e.g., cookies)
 CORS_ALLOW_CREDENTIALS = True
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
+        }
+    }
+}
