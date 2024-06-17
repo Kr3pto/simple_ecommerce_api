@@ -5,9 +5,6 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Product, Cart,Category,Region
 from .serializers import ProductSerializer, CartSerializer,CategorySerializer, RegionSerializer
-from jiji_api.data_management_jiji import serializers
-
-
 
 
 class ProductList(generics.ListCreateAPIView):
