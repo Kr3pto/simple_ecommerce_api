@@ -7,5 +7,5 @@ services:
     start_command: gunicorn myproject.wsgi --bind 0.0.0.0:$PORT
 
 databases:
-  - name: shop  # Choose a name for your Render PostgreSQL database
+  - name: my-postgresql-db   # Choose a name for your Render PostgreSQL database
     type: postgresql         # Specify PostgreSQL as the database type
