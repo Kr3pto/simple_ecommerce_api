@@ -1,0 +1,11 @@
+# render.yaml
+
+services:
+  - name: web
+    env: python
+    build_command: pip install -r requirements.txt
+    start_command: gunicorn jiji_api.wsgi --bind 0.0.0.0:$PORT
+
+databases:
+  - name: my-mysql-db   # Replace with your preferred database name
+    type: mysql
