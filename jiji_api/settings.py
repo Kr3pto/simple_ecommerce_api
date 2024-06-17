@@ -58,6 +58,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # React app URL
+    'https://react-frontend-api.onrender.com',
+
 ]
 
 
@@ -165,3 +167,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+
+
+# If you need to allow credentials (e.g., cookies)
+CORS_ALLOW_CREDENTIALS = True
