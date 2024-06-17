@@ -85,6 +85,7 @@ WSGI_APPLICATION = 'jiji_api.wsgi.application'
 
 # shop/settings.py
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
